@@ -175,8 +175,6 @@ define([
             for (var i = 0; i < candidates.length; i++)
             {
                 candidates[i].id = candidates[i]._doc;
-                //candidates[i].ambitions = "TEST_AMBITIONS"; // todo: convert short ambitions
-                //candidates[i].accomplishments = "TEST_ACCOMPLISHMENTS"; // todo: convert short accomplishments
             }
 
             // TODO: sort candidates into degree name buckets

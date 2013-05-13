@@ -25,7 +25,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 function program1(depth0,data) {
   
   
-  return "\n<div data-role=\"footer\" data-theme=\"a\">\n    <h1>Massachusetts Institute of Technology</h1>\n</div><!-- /footer -->\n";
+  return "\n<div data-role=\"footer\" data-theme=\"a\">\n    <h1>Southern State University</h1>\n</div><!-- /footer -->\n";
   }
 
   stack1 = helpers['if'].call(depth0, depth0.showFooter, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
@@ -169,9 +169,10 @@ function program1(depth0,data) {
   buffer += escapeExpression(stack2)
     + "</div>\r\n\r\n    <div class=\"candidate-info-content\">\r\n\r\n        <div class=\"photo\">\r\n            <img src=\"/preview/"
     + escapeExpression(((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1._doc)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "/candidate_info?force=true&size=256\">\r\n        </div>\r\n\r\n        <p class=\"about\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1.about)),stack1 == null || stack1 === false ? stack1 : stack1['long'])),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\r\n\r\n    </div>\r\n\r\n</div>\r\n\r\n";
+    + "/candidate_info?size=256\">\r\n        </div>\r\n\r\n        <p class=\"about\">";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1.about)),stack1 == null || stack1 === false ? stack1 : stack1['long'])),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</p>\r\n\r\n    </div>\r\n\r\n</div>\r\n\r\n";
   return buffer;
   }
 
@@ -215,7 +216,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     + "</div>\r\n    </div>\r\n\r\n    <div data-role=\"content\" data-theme=\"d\" class=\"ui-corner-bottom ui-content popup-candidate-content\">\r\n\r\n        <div class=\"photo\">\r\n            <img src=\"/preview/"
     + escapeExpression(((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1._doc)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "/candidate_popup?size=128\">\r\n        </div>\r\n\r\n        <p class=\"about\">"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1.about)),stack1 == null || stack1 === false ? stack1 : stack1['long'])),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1.about)),stack1 == null || stack1 === false ? stack1 : stack1.medium)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "</p>\r\n\r\n        <fieldset class=\"ui-grid-a\">\r\n            <div class=\"ui-block-a\"><button class=\"gifting\" data-theme=\"b\">Gifting</button></div>\r\n            <div class=\"ui-block-b\"><button class=\"social\" data-theme=\"b\">Social</button></div>\r\n            <div class=\"ui-block-c\"><button class=\"profile\" data-theme=\"b\">View Profile</button></div>\r\n        </fieldset>\r\n        <div class=\"gn-5\">\r\n            <a href=\"#\" data-role=\"button\" data-rel=\"back\" data-icon=\"delete\" data-mini=\"true\" data-theme=\"a\" >Close Window</a>\r\n        </div>\r\n    </div>\r\n\r\n</div>";
   return buffer;
   });
@@ -263,14 +264,14 @@ function program3(depth0,data) {
   else { stack1 = depth0.id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
     + "\">";
-  if (stack1 = helpers.firstName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.firstName; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + " ";
   if (stack1 = helpers.lastName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.lastName; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "</a>\r\n    </li>\r\n    ";
+    + ", ";
+  if (stack1 = helpers.firstName) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.firstName; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + " </a>\r\n    </li>\r\n    ";
   return buffer;
   }
 

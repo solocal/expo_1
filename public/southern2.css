@@ -51,6 +51,7 @@
     white-space: normal;
     font-size: 15px;
     color: #222;
+    white-space: pre-wrap;
 }
 
 /***************************************************************************************************************/
@@ -114,4 +115,6 @@
     white-space: normal;
     font-size: 15px;
     color: #222;
+    white-space:pre-wrap;
 }
+
