@@ -1,0 +1,27 @@
+<div data-role="popup" data-overlay-theme="a" data-theme="a" class="ui-corner-all popup-candidate">
+
+    <div data-role="header" data-theme="a" class="ui-corner-top">
+        <h1 class="name">{{candidate.firstName}} {{candidate.lastName}}</h1>
+        <div class="class">Class of {{candidate.year}}</div>
+        <div class="degree-school">{{degreeTitle}} - {{schoolTitle}}</div>
+    </div>
+
+    <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content popup-candidate-content">
+
+        <div class="photo">
+            <img src="/preview/{{candidate._doc}}/candidate_popup?size=128">
+        </div>
+
+        <p class="about">{{candidate.about.long}}</p>
+
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a"><button class="gifting" data-theme="b">Gifting</button></div>
+            <div class="ui-block-b"><button class="social" data-theme="b">Social</button></div>
+            <div class="ui-block-c"><button class="profile" data-theme="b">View Profile</button></div>
+        </fieldset>
+        <div class="gn-5">
+            <a href="#" data-role="button" data-rel="back" data-icon="delete" data-mini="true" data-theme="a" >Close Window</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,117 @@
+.popup-candidate
+{
+    padding: 20px;
+    width: 80%;
+}
+
+.popup-candidate-content .photo
+{
+    text-align:center;
+    max-height: 170px;
+}
+
+.popup-candidate-content .photo IMG
+{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.popup-candidate .name
+{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    align: center;
+}
+
+.popup-candidate .class
+{
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+    padding-top:10px;
+}
+
+.popup-candidate .degree-school
+{
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+}
+
+.popup-candidate .about
+{
+    padding-top: 10px;
+    white-space: normal;
+    font-size: 15px;
+    color: #222;
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+.candidate-info
+{
+    padding: 20px;
+}
+
+.candidate-info-content
+{
+    padding-top: 20px;
+}
+
+.candidate-info-content .photo
+{
+    text-align:center;
+}
+
+.candidate-info-content .photo IMG
+{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.candidate-info .name
+{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    align: center;
+}
+
+.candidate-info .class
+{
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+    padding-top:10px;
+}
+
+.candidate-info .degree-school
+{
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+}
+
+.candidate-info .about
+{
+    padding-top: 10px;
+    white-space: normal;
+    font-size: 15px;
+    color: #222;
+}

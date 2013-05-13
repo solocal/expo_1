@@ -1,0 +1,21 @@
+{{#page}}
+
+<div class="candidate-info">
+
+    <h1 class="name">{{candidate.firstName}} {{candidate.lastName}}</h1>
+    <div class="class">Class of {{candidate.year}}</div>
+    <div class="degree-school">{{degreeTitle}} - {{schoolTitle}}</div>
+
+    <div class="candidate-info-content">
+
+        <div class="photo">
+            <img src="/preview/{{candidate._doc}}/candidate_info?size=256">
+        </div>
+
+        <p class="about">{{candidate.about.long}}</p>
+
+    </div>
+
+</div>
+
+{{/page}}
