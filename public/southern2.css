@@ -120,6 +120,6 @@
 
 
 /** Prevents header from overlapping text on first load **/
-.ui-page {
-    padding-top: 91px !important;
+.ui-header {
+    height: 98px;
 }
