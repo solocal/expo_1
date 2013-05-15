@@ -76,7 +76,7 @@ function program1(depth0,data) {
   buffer += "\n\n";
   stack1 = self.invokePartial(partials.footer, 'footer', depth0, helpers, partials, data);
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n\n<script type=\"text/javascript\">\n\n    var _gaq = _gaq || [];\n    _gaq.push(['_setAccount', 'UA-40574341-1']);\n    _gaq.push(['_trackPageview']);\n\n    (function() {\n        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n    })();\n\n</script>\n\n";
+  buffer += "\n\n<script>\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n    ga('create', 'UA-40820424-1', 'solocal.mobi');\n    ga('send', 'pageview');\n\n</script>\n";
   return buffer;
   }));
 
@@ -217,7 +217,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     + escapeExpression(((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1._doc)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "/candidate_popup?size=128\">\r\n        </div>\r\n\r\n        <p class=\"about\">"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.candidate),stack1 == null || stack1 === false ? stack1 : stack1.about)),stack1 == null || stack1 === false ? stack1 : stack1.medium)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\r\n\r\n        <fieldset class=\"ui-grid-a\">\r\n            <div class=\"ui-block-a\"><button class=\"gifting\" data-theme=\"b\">Gifting</button></div>\r\n            <div class=\"ui-block-b\"><button class=\"social\" data-theme=\"b\">Social</button></div>\r\n            <div class=\"ui-block-c\"><button class=\"profile\" data-theme=\"b\">View Profile</button></div>\r\n        </fieldset>\r\n        <div class=\"gn-5\">\r\n            <a href=\"#\" data-role=\"button\" data-rel=\"back\" data-icon=\"delete\" data-mini=\"true\" data-theme=\"a\" >Close Window</a>\r\n        </div>\r\n    </div>\r\n\r\n</div>";
+    + "</p>\r\n\r\n        <fieldset class=\"ui-grid-a\">\r\n            <div class=\"ui-block-a\"><button class=\"gifting\" data-theme=\"b\" data-inline=\"false\" data-mini=\"true\">Gifting</button></div>\r\n            <div class=\"ui-block-b\"><button class=\"social\" data-theme=\"b\" data-inline=\"false\" data-mini=\"true\">Social</button></div>\r\n            <div class=\"ui-block-c\"><button class=\"profile\" data-theme=\"b\" data-inline=\"false\" data-mini=\"true\">View Profile</button></div>\r\n        </fieldset>\r\n        <div class=\"gn-5\">\r\n            <a href=\"#\" data-role=\"button\" data-rel=\"back\" data-icon=\"delete\" data-mini=\"true\" data-theme=\"a\" >Close Window</a>\r\n        </div>\r\n    </div>\r\n\r\n</div>";
   return buffer;
   });
 
